@@ -32,6 +32,12 @@ class TripTableViewCell: UITableViewCell {
     
     fullPriceLabel.attributedText = stringAttribute
     
-    
+    if let numberOfDays = trip?.daily, let numberOfGuests = trip?.guests {
+      
+      let dailyText = numberOfDays > 1 ? "diárias" : "diária"
+      let guestsText = numberOfGuests > 1 ? "hóspedes" : "hóspede"
+      
+      tripDailyLabel.text = "\(numberOfDays) \(dailyText) - \(numberOfGuests) \(guestsText)"
+    }
   }
 }
