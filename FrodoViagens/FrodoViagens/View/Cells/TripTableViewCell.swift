@@ -19,4 +19,15 @@ class TripTableViewCell: UITableViewCell {
   @IBOutlet weak var fullPriceLabel: UILabel!
   @IBOutlet weak var priceWithDiscountLabel: UILabel!
   @IBOutlet weak var tripCancellationStatusLabel: UILabel!
+  
+  func setCel(_ trip: Trip?) {
+    imageViewCell.image = UIImage(named: trip?.asset ?? "")
+    tripTitleLabel.text = trip?.title
+    tripSubtitleLabel.text = trip?.subtitle
+    priceWithDiscountLabel.text = "R$ \(trip?.priceWithDiscount ?? 0.0)"
+    
+    let stringAttribute: NSMutableAttributedString = NSMutableAttributedString(string: "R$ \(trip?.fullPrice ?? 0.0)")
+    
+    stringAttribute.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 1, range: NSMakeRange(0, stringAttribute.length))
+  }
 }
