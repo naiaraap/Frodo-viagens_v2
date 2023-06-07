@@ -37,6 +37,16 @@ extension ViewController: UITableViewDataSource {
     guard let tripCell = tableView.dequeueReusableCell(withIdentifier: "TripTableViewCell", for: indexPath) as? TripTableViewCell else {
       fatalError("error to create TripTableViewCell")
     }
+    
+    let viewModel = tripsSection?[indexPath.section]
+    
+    switch viewModel?.tripType {
+    case .highlights:
+        tripCell.setCell(viewModel?.trips[indexPath.row])
+    default:
+      return UITableViewCell()
+    }
+    
     return tripCell
     
     //let viewModel = tripsSection?[indexPath.section]

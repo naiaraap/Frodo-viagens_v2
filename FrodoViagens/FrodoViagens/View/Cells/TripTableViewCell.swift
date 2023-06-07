@@ -20,7 +20,7 @@ class TripTableViewCell: UITableViewCell {
   @IBOutlet weak var priceWithDiscountLabel: UILabel!
   @IBOutlet weak var tripCancellationStatusLabel: UILabel!
   
-  func setCel(_ trip: Trip?) {
+  func setCell(_ trip: Trip?) {
     imageViewCell.image = UIImage(named: trip?.asset ?? "")
     tripTitleLabel.text = trip?.title
     tripSubtitleLabel.text = trip?.subtitle
