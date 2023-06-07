@@ -18,7 +18,7 @@
                     <rect key="frame" x="-293" y="-24" width="1000" height="274"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="frodo viagens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fF-mD-kJQ">
-                            <rect key="frame" x="313" y="48" width="374" height="49"/>
+                            <rect key="frame" x="313" y="100" width="374" height="49"/>
                             <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="23"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
@@ -30,7 +30,9 @@
                     <color key="backgroundColor" red="0.11764705882352941" green="0.23137254901960785" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="250" id="GeQ-9j-JSd"/>
-                        <constraint firstItem="5fF-mD-kJQ" firstAttribute="top" secondItem="JSF-Ka-V2L" secondAttribute="top" constant="48" id="Zsw-PJ-Obu"/>
+                        <constraint firstItem="5fF-mD-kJQ" firstAttribute="top" secondItem="JSF-Ka-V2L" secondAttribute="top" constant="48" id="Zsw-PJ-Obu">
+                            <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                        </constraint>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ji6-4y-ujW" userLabel="Banner View">
