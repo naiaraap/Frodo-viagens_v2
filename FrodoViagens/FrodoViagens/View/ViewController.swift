@@ -48,16 +48,6 @@ extension ViewController: UITableViewDataSource {
     }
     
     return tripCell
-    
-    //let viewModel = tripsSection?[indexPath.section]
-    
-    //    switch viewModel?.tripType {
-    //    case .highlights:
-    //        tripCell.setCell(viewModel?.trips[indexPath.row])
-    //        return tripCell
-    //    default:
-    //      return UITableViewCell()
-    //    }
   }
 }
 
