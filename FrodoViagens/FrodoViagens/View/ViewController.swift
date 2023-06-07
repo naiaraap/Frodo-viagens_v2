@@ -30,8 +30,7 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 10
-    //return tripsSection?[section].numberOfTripsOrRows ?? 0
+    return tripsSection?[section].numberOfTripsOrRows ?? 0
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

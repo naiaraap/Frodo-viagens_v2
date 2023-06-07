@@ -7,8 +7,8 @@
                 "asset": "natal-brasil",
                 "daily": 7,
                 "guests": 1,
-                "priceWithoutDiscount": 1.284,
-                "price": 899,
+                "fullPrice": 1.284,
+                "priceWithDiscount": 899,
                 "cancellation": "Cancelamento Grátis!"
             },
             {
@@ -18,8 +18,8 @@
                 "asset": "bonito-brasil",
                 "daily": 5,
                 "guests": 2,
-                "priceWithoutDiscount": 1.048,
-                "price": 734,
+                "fullPrice": 1.048,
+                "priceWithDiscount": 734,
                 "cancellation": "Cancelamento Grátis!"
             },
             {
@@ -29,8 +29,8 @@
                 "asset": "porto-galinhas-brasil",
                 "daily": 5,
                 "guests": 1,
-                "priceWithoutDiscount": 1.078,
-                "price": 809,
+                "fullPrice": 1.078,
+                "priceWithDiscount": 809,
                 "cancellation": "Cancelamento Grátis!"
             }
         ],
@@ -41,8 +41,8 @@
                 "asset": "beto-carrero-brasil",
                 "daily": 5,
                 "guests": 1,
-                "priceWithoutDiscount": 2.898,
-                "price": 1449,
+                "fullPrice": 2.898,
+                "priceWithDiscount": 1449,
                 "cancellation": "Cancelamento Grátis!"
             },
             {
@@ -52,8 +52,8 @@
                 "asset": "sao-luis-brasil",
                 "daily": 5,
                 "guests": 1,
-                "priceWithoutDiscount": 1.078,
-                "price": 809,
+                "fullPrice": 1.078,
+                "priceWithDiscount": 809,
                 "cancellation": "Cancelamento Grátis!"
             }
         ],
@@ -64,8 +64,8 @@
                 "asset": "cancun-internacional",
                 "daily": 5,
                 "guests": 1,
-                "priceWithoutDiscount": 5.816,
-                "price": 3.199,
+                "fullPrice": 5.816,
+                "priceWithDiscount": 3.199,
                 "cancellation": "Cancelamento Grátis!"
             },
             {
@@ -75,8 +75,8 @@
                 "asset": "santiago-internacional",
                 "daily": 3,
                 "guests": 1,
-                "priceWithoutDiscount": 1.895,
-                "price": 1.327,
+                "fullPrice": 1.895,
+                "priceWithDiscount": 1.327,
                 "cancellation": "Cancelamento Grátis!"
             }
         ]
