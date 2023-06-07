@@ -39,5 +39,9 @@ class TripTableViewCell: UITableViewCell {
       
       tripDailyLabel.text = "\(numberOfDays) \(dailyText) - \(numberOfGuests) \(guestsText)"
     }
+    
+    DispatchQueue.main.async {
+      self.backgroundViewCell.addShadow()
+    }
   }
 }
