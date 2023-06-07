@@ -29,5 +29,9 @@ class TripTableViewCell: UITableViewCell {
     let stringAttribute: NSMutableAttributedString = NSMutableAttributedString(string: "R$ \(trip?.fullPrice ?? 0.0)")
     
     stringAttribute.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 1, range: NSMakeRange(0, stringAttribute.length))
+    
+    fullPriceLabel.attributedText = stringAttribute
+    
+    
   }
 }
