@@ -28,26 +28,46 @@ class ViewController: UIViewController {
   }
 }
 
+//MARK: - Extensions
+
+//MARK: Datasource
 extension ViewController: UITableViewDataSource {
+  
+  func numberOfSections(in tableView: UITableView) -> Int {
+    return tripsSection?.count ?? 0
+  }
+  
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return tripsSection?[section].numberOfTripsOrRows ?? 0
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    guard let tripCell = tableView.dequeueReusableCell(withIdentifier: "TripTableViewCell", for: indexPath) as? TripTableViewCell else {
-      fatalError("error to create TripTableViewCell")
-    }
     
     let viewModel = tripsSection?[indexPath.section]
     
     switch viewModel?.tripType {
     case .highlights:
+        guard let tripCell = tableView.dequeueReusableCell(withIdentifier: "TripTableViewCell", for: indexPath) as? TripTableViewCell else {
+          fatalError("error to create TripTableViewCell")
+        }
+        
         tripCell.setCell(viewModel?.trips[indexPath.row])
+        
+        return tripCell
+        
+    case .offers:
+        guard let offerCell = tableView.dequeueReusableCell(withIdentifier: "OffersTableViewCell", for: indexPath) as? TripTableViewCell else {
+          fatalError("error to create TripTableViewCell")
+        }
+        
+        offerCell.setCell(viewModel?.trips[indexPath.row])
+        
+        return offerCell
+    
     default:
       return UITableViewCell()
     }
     
-    return tripCell
   }
 }
 

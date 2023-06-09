@@ -46,6 +46,11 @@ func load(_ filename: String) -> [TripViewModel]? {
                     let highlightsViewModel = TripHighlightsViewModel(highlights)
                     listTripViewModel.insert(highlightsViewModel, at: 0)
                 }
+            case .offers:
+                if let offers = tripType?.offers {
+                    let offersViewModel = TripOffersViewModel(offers)
+                    listTripViewModel.append(offersViewModel)
+                }
             default:
                 break
             }
