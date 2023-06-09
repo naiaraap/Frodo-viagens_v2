@@ -22,6 +22,7 @@ class ViewController: UIViewController {
   //MARK: method for SET TableView
   func setTableView() {
     travelsTableView.register(UINib(nibName: "TripTableViewCell", bundle: nil), forCellReuseIdentifier: "TripTableViewCell")
+    travelsTableView.register(UINib(nibName: "OffersTableViewCell", bundle: nil), forCellReuseIdentifier: "OffersTableViewCell")
     super.viewDidLoad()
     travelsTableView.dataSource = self
     travelsTableView.delegate = self
@@ -56,8 +57,8 @@ extension ViewController: UITableViewDataSource {
         return tripCell
         
     case .offers:
-        guard let offerCell = tableView.dequeueReusableCell(withIdentifier: "OffersTableViewCell", for: indexPath) as? TripTableViewCell else {
-          fatalError("error to create TripTableViewCell")
+        guard let offerCell = tableView.dequeueReusableCell(withIdentifier: "OffersTableViewCell", for: indexPath) as? OffersTableViewCell else {
+          fatalError("error to create OffersTableViewCell")
         }
         
         offerCell.setCell(viewModel?.trips[indexPath.row])

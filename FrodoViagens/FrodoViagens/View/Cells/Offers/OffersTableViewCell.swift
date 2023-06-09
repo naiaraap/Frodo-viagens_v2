@@ -8,6 +8,8 @@
 import UIKit
 
 class OffersTableViewCell: UITableViewCell {
-
+  func setCell(_ trip: Trip?) {
     
+  }
+  
 }

@@ -49,7 +49,7 @@ func load(_ filename: String) -> [TripViewModel]? {
             case .offers:
                 if let offers = tripType?.offers {
                     let offersViewModel = TripOffersViewModel(offers)
-                    listTripViewModel.append(offersViewModel)
+                  listTripViewModel.append(offersViewModel)
                 }
             default:
                 break
