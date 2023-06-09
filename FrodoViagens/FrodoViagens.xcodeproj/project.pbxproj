@@ -22,6 +22,8 @@
 		4C6CD1A72A30BF4600417F7E /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6CD1A62A30BF4500417F7E /* UIView+Extension.swift */; };
 		4C6CD1A92A30C08500417F7E /* TripViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6CD1A82A30C08500417F7E /* TripViewModel.swift */; };
 		4C6CD1AB2A30C08D00417F7E /* TripHighlightsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6CD1AA2A30C08D00417F7E /* TripHighlightsViewModel.swift */; };
+		4C8B7A1F2A335B5F00780871 /* OffersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8B7A1D2A335B5F00780871 /* OffersTableViewCell.swift */; };
+		4C8B7A202A335B5F00780871 /* OffersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C8B7A1E2A335B5F00780871 /* OffersTableViewCell.xib */; };
 		4C8BC0532A28D345006F52C1 /* TripTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8BC0512A28D345006F52C1 /* TripTableViewCell.swift */; };
 		4C8BC0542A28D345006F52C1 /* TripTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C8BC0522A28D345006F52C1 /* TripTableViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -44,6 +46,8 @@
 		4C6CD1A62A30BF4500417F7E /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		4C6CD1A82A30C08500417F7E /* TripViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripViewModel.swift; sourceTree = "<group>"; };
 		4C6CD1AA2A30C08D00417F7E /* TripHighlightsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripHighlightsViewModel.swift; sourceTree = "<group>"; };
+		4C8B7A1D2A335B5F00780871 /* OffersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersTableViewCell.swift; sourceTree = "<group>"; };
+		4C8B7A1E2A335B5F00780871 /* OffersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OffersTableViewCell.xib; sourceTree = "<group>"; };
 		4C8BC0512A28D345006F52C1 /* TripTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTableViewCell.swift; sourceTree = "<group>"; };
 		4C8BC0522A28D345006F52C1 /* TripTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,11 +111,29 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		4C8B7A1B2A335AB500780871 /* Highlights */ = {
+			isa = PBXGroup;
+			children = (
+				4C8BC0522A28D345006F52C1 /* TripTableViewCell.xib */,
+				4C8BC0512A28D345006F52C1 /* TripTableViewCell.swift */,
+			);
+			path = Highlights;
+			sourceTree = "<group>";
+		};
+		4C8B7A1C2A335AF300780871 /* Offers */ = {
+			isa = PBXGroup;
+			children = (
+				4C8B7A1D2A335B5F00780871 /* OffersTableViewCell.swift */,
+				4C8B7A1E2A335B5F00780871 /* OffersTableViewCell.xib */,
+			);
+			path = Offers;
+			sourceTree = "<group>";
+		};
 		4C8BC0502A28D1B9006F52C1 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				4C8BC0512A28D345006F52C1 /* TripTableViewCell.swift */,
-				4C8BC0522A28D345006F52C1 /* TripTableViewCell.xib */,
+				4C8B7A1C2A335AF300780871 /* Offers */,
+				4C8B7A1B2A335AB500780871 /* Highlights */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -222,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C8B7A202A335B5F00780871 /* OffersTableViewCell.xib in Resources */,
 				4C354B202A24E3E5006E33E8 /* LaunchScreen.storyboard in Resources */,
 				4C6CD19E2A30BAFA00417F7E /* server-response.json in Resources */,
 				4C6604D92A25242200FA80A7 /* HomeTableViewHeader.xib in Resources */,
@@ -246,6 +269,7 @@
 				4C6CD1A92A30C08500417F7E /* TripViewModel.swift in Sources */,
 				4C6CD1AB2A30C08D00417F7E /* TripHighlightsViewModel.swift in Sources */,
 				4C6CD1A42A30BBCC00417F7E /* Trip.swift in Sources */,
+				4C8B7A1F2A335B5F00780871 /* OffersTableViewCell.swift in Sources */,
 				4C6CD1A22A30BBB200417F7E /* TypesOfTrips.swift in Sources */,
 				4C354B162A24E3E3006E33E8 /* SceneDelegate.swift in Sources */,
 				4C8BC0532A28D345006F52C1 /* TripTableViewCell.swift in Sources */,
