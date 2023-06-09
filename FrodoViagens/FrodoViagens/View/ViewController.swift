@@ -72,13 +72,17 @@ extension ViewController: UITableViewDataSource {
   }
 }
 
+//MARK: Delegate for set table header
 extension ViewController: UITableViewDelegate {
   
   func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-    let headerView = Bundle.main.loadNibNamed("HomeTableViewHeader", owner: self, options: nil)?.first as? HomeTableViewHeader
-    headerView?.setView()
-    
-    return headerView
+    if section == 0 {
+      let headerView = Bundle.main.loadNibNamed("HomeTableViewHeader", owner: self, options: nil)?.first as? HomeTableViewHeader
+      headerView?.setView()
+      
+      return headerView
+    }
+    return nil
   }
   
   func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
