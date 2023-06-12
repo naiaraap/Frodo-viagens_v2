@@ -61,7 +61,7 @@ extension ViewController: UITableViewDataSource {
           fatalError("error to create OffersTableViewCell")
         }
         
-        offerCell.setCell(viewModel?.trips[indexPath.row])
+        offerCell.setCell(viewModel?.trips)
         
         return offerCell
     
