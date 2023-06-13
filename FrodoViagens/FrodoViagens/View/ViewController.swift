@@ -76,9 +76,9 @@ extension ViewController: UITableViewDataSource {
 extension ViewController: UITableViewDelegate {
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    let detailController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetailTripViewController") as? DetailTripViewController
+    let detailController = DetailViewController(nibName: "DetailViewController", bundle: nil)
     
-    navigationController?.pushViewController(detailController!, animated: true)
+    navigationController?.pushViewController(detailController, animated: true)
   
   }
   

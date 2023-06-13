@@ -1,5 +1,5 @@
 //
-//  DetailTripViewController.swift
+//  DetailViewController.swift
 //  FrodoViagens
 //
 //  Created by Naiara de Almeida Pantuza on 13/06/23.
@@ -7,14 +7,14 @@
 
 import UIKit
 
-class DetailTripViewController: UIViewController {
+class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
+
 
     /*
     // MARK: - Navigation
