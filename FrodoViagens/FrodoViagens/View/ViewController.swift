@@ -75,9 +75,12 @@ extension ViewController: UITableViewDataSource {
 //MARK: Delegate for set table header
 extension ViewController: UITableViewDelegate {
   
-//  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//    let detailController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetailTripViewController") as? DetailTripViewController
-//  }
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let detailController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetailTripViewController") as? DetailTripViewController
+    
+    navigationController?.pushViewController(detailController!, animated: true)
+  
+  }
   
   func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
     if section == 0 {
