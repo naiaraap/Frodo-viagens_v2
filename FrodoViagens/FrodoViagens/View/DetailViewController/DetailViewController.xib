@@ -24,23 +24,40 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="foV-RE-O9D">
                             <rect key="frame" x="0.0" y="0.0" width="411" height="235"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GKl-oR-J4E">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img1" translatesAutoresizingMaskIntoConstraints="NO" id="GKl-oR-J4E">
                                     <rect key="frame" x="0.0" y="0.0" width="411" height="235"/>
                                 </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHw-Ku-EDL">
+                                    <rect key="frame" x="10" y="35" width="25" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="25" id="0x8-tl-AgX"/>
+                                        <constraint firstAttribute="height" constant="25" id="X5J-IY-9Qw"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="icon_back" imagePadding="0.0"/>
+                                </button>
                             </subviews>
                             <constraints>
+                                <constraint firstItem="DHw-Ku-EDL" firstAttribute="leading" secondItem="foV-RE-O9D" secondAttribute="leading" constant="10" id="2cZ-Ax-pW4"/>
                                 <constraint firstItem="GKl-oR-J4E" firstAttribute="top" secondItem="foV-RE-O9D" secondAttribute="top" id="Hdi-4u-TU3"/>
+                                <constraint firstItem="DHw-Ku-EDL" firstAttribute="top" secondItem="foV-RE-O9D" secondAttribute="top" constant="35" id="NBt-m6-hlQ"/>
                                 <constraint firstItem="GKl-oR-J4E" firstAttribute="leading" secondItem="foV-RE-O9D" secondAttribute="leading" id="nrE-nM-elr"/>
                                 <constraint firstAttribute="trailing" secondItem="GKl-oR-J4E" secondAttribute="trailing" id="w4S-GW-TiI"/>
                                 <constraint firstAttribute="bottom" secondItem="GKl-oR-J4E" secondAttribute="bottom" id="xUw-cO-Nxy"/>
                             </constraints>
                         </view>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eG3-Qu-kHA">
-                            <rect key="frame" x="16" y="235" width="379" height="59"/>
+                            <rect key="frame" x="16" y="234.99999999999997" width="379" height="78.666666666666657"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pacote de Viagem para Cancun All Inclusive" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cG-xl-SF1">
                                     <rect key="frame" x="0.0" y="0.0" width="379" height="59"/>
                                     <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="21"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aéreo + Hospedagem" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCS-OI-FY8">
+                                    <rect key="frame" x="0.0" y="58.999999999999993" width="379" height="19.666666666666664"/>
+                                    <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="14"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -72,6 +89,8 @@
         </view>
     </objects>
     <resources>
+        <image name="icon_back" width="50" height="50"/>
+        <image name="img1" width="640" height="426"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
