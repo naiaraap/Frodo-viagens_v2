@@ -53,7 +53,7 @@
                             </constraints>
                         </view>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eG3-Qu-kHA">
-                            <rect key="frame" x="16" y="234.99999999999997" width="379" height="78.666666666666657"/>
+                            <rect key="frame" x="16" y="235" width="379" height="158.66666666666663"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pacote de Viagem para Cancun All Inclusive" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cG-xl-SF1">
                                     <rect key="frame" x="0.0" y="0.0" width="379" height="59"/>
@@ -67,6 +67,75 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xDe-7y-c7q">
+                                    <rect key="frame" x="0.0" y="78.666666666666686" width="379" height="80"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uvV-4t-KKi">
+                                            <rect key="frame" x="0.0" y="0.0" width="189.66666666666666" height="80"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-sol" translatesAutoresizingMaskIntoConstraints="NO" id="dXl-R5-c9b">
+                                                    <rect key="frame" x="8" y="27.666666666666629" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="Nso-9v-aea"/>
+                                                        <constraint firstAttribute="width" constant="25" id="VmM-FC-Hy5"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 ou 7 diárias" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WkM-Gx-GfG">
+                                                    <rect key="frame" x="41.000000000000007" y="29.666666666666629" width="91.666666666666686" height="21"/>
+                                                    <fontDescription key="fontDescription" name="KohinoorTelugu-Medium" family="Kohinoor Telugu" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="dXl-R5-c9b" firstAttribute="leading" secondItem="uvV-4t-KKi" secondAttribute="leading" constant="8" id="Mef-FW-HxO"/>
+                                                <constraint firstItem="dXl-R5-c9b" firstAttribute="centerY" secondItem="uvV-4t-KKi" secondAttribute="centerY" id="TJv-V8-0SM"/>
+                                                <constraint firstItem="WkM-Gx-GfG" firstAttribute="leading" secondItem="dXl-R5-c9b" secondAttribute="trailing" constant="8.0000000000000071" id="lBP-P1-uLC"/>
+                                                <constraint firstItem="WkM-Gx-GfG" firstAttribute="centerY" secondItem="uvV-4t-KKi" secondAttribute="centerY" id="pqd-YK-hsq"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aAL-KE-r7J">
+                                            <rect key="frame" x="189.66666666666663" y="0.0" width="189.33333333333337" height="80"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rWW-bX-j8z">
+                                                    <rect key="frame" x="113.33333333333334" y="22.666666666666629" width="60" height="35"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- 20%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IlZ-Mw-yCh">
+                                                            <rect key="frame" x="11.333333333333314" y="7" width="37.333333333333336" height="21"/>
+                                                            <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="15"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 5.350" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNI-ZC-xyE">
+                                                            <rect key="frame" x="15.666666666666689" y="38.666666666666686" width="44.333333333333343" height="17"/>
+                                                            <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="12"/>
+                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="0kf-uB-Jwp"/>
+                                                        <constraint firstItem="nNI-ZC-xyE" firstAttribute="top" secondItem="IlZ-Mw-yCh" secondAttribute="bottom" constant="10.67" id="KS0-ol-sg9"/>
+                                                        <constraint firstAttribute="width" constant="60" id="dn0-Bh-Xy9"/>
+                                                        <constraint firstAttribute="trailing" secondItem="nNI-ZC-xyE" secondAttribute="trailing" id="m3g-0p-B32"/>
+                                                        <constraint firstItem="IlZ-Mw-yCh" firstAttribute="centerX" secondItem="rWW-bX-j8z" secondAttribute="centerX" id="qfl-S4-WB4"/>
+                                                        <constraint firstItem="IlZ-Mw-yCh" firstAttribute="centerY" secondItem="rWW-bX-j8z" secondAttribute="centerY" id="s80-fE-KGt"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="rWW-bX-j8z" secondAttribute="trailing" constant="16" id="AjK-BV-7Go"/>
+                                                <constraint firstItem="rWW-bX-j8z" firstAttribute="centerY" secondItem="aAL-KE-r7J" secondAttribute="centerY" id="icU-LS-pTL"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="80" id="sMb-Ai-chd"/>
+                                    </constraints>
+                                </stackView>
                             </subviews>
                         </stackView>
                     </subviews>
@@ -91,14 +160,24 @@
                 <constraint firstItem="CeF-gE-Q9Y" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="A1v-G4-j4o"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="CeF-gE-Q9Y" secondAttribute="bottom" id="LTl-Xv-7Uj"/>
             </constraints>
-            <point key="canvasLocation" x="78.625954198473281" y="-12.67605633802817"/>
+            <point key="canvasLocation" x="89" y="-8"/>
         </view>
+        <stackView opaque="NO" contentMode="scaleToFill" id="IXs-Bj-zO5">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <viewLayoutGuide key="safeArea" id="WOz-Mh-AcU"/>
+            <point key="canvasLocation" x="-78" y="-398"/>
+        </stackView>
     </objects>
     <resources>
+        <image name="icon-sol" width="50" height="50"/>
         <image name="icon_back" width="50" height="50"/>
         <image name="img1" width="640" height="426"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
