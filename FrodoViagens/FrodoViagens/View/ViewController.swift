@@ -27,6 +27,13 @@ class ViewController: UIViewController {
     travelsTableView.dataSource = self
     travelsTableView.delegate = self
   }
+  
+  func goToDetails(_ trip: Trip?) {
+    if let selectedTrip = trip {
+      let detailController = DetailViewController.instantiate(selectedTrip)
+      navigationController?.pushViewController(detailController, animated: true)
+    }
+  }
 }
 
 //MARK: - Extensions
@@ -76,10 +83,17 @@ extension ViewController: UITableViewDataSource {
 extension ViewController: UITableViewDelegate {
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    let detailController = DetailViewController(nibName: "DetailViewController", bundle: nil)
     
-    navigationController?.pushViewController(detailController, animated: true)
-  
+    let viewModel = tripsSection?[indexPath.row]
+    
+    switch viewModel?.tripType {
+      case .highlights, .international:
+        let selectedTrip = viewModel?.trips[indexPath.row]
+        goToDetails(selectedTrip)
+        
+      default:
+        break
+    }
   }
   
   func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {

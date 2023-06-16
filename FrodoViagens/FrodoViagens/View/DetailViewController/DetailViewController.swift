@@ -14,7 +14,16 @@ class DetailViewController: UIViewController {
   @IBOutlet weak var titleView: UILabel!
   @IBOutlet weak var SubtitleView: UILabel!
   
+  //MARK - attributes
+  var trip: Trip?
+  
   //MARK - View Life Cicle
+  class func instantiate(_ trip: Trip) -> DetailViewController {
+    let detailViewController = DetailViewController(nibName: "DetailViewController", bundle: nil)
+    detailViewController.trip = trip
+    return detailViewController
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     //setupView()
