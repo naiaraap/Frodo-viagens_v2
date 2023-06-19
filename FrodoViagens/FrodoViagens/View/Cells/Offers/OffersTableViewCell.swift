@@ -18,7 +18,11 @@ class OffersTableViewCell: UITableViewCell {
   @IBOutlet var offerTripFullPriceLabel: [UILabel]!
   @IBOutlet var offerTripPriceWithDiscountLabel: [UILabel]!
   
+//MARK: - Attributes
+  private var trips: [Trip]?
+  
   func setCell(_ trips: [Trip]?) {
+    self.trips = trips
     guard let tripsList = trips else { return }
     
     for i in 0..<tripsList.count {
@@ -26,9 +30,25 @@ class OffersTableViewCell: UITableViewCell {
     }
     
     offerTripBackgroundView.forEach { actualView in
+      let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didSelectView(_:)))
+      actualView.addGestureRecognizer(tapGestureRecognizer)
       actualView.addShadow()
     }
     
+  }
+  
+  @objc func didSelectView(_ gesture: UITapGestureRecognizer) {
+    if let selectedView = gesture.view, let trips = self.trips {
+      let selectedTrip = trips[selectedView.tag]
+      print("Selected trip: \(selectedTrip.title)")
+//      let index = view.tag
+//      let trip = TripOffersViewModel().trips[index]
+//      let detailViewController = DetailViewController.instantiate(trip)
+//      if let navigationController = UIApplication.shared.keyWindow?.rootViewController as? UINavigationController {
+//        navigationController.pushViewController(detailViewController, animated: true)
+//      }
+    }
+  
   }
   
   func setOutlets(_ index: Int, trip: Trip) {

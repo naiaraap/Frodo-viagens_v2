@@ -91,6 +91,10 @@ extension ViewController: UITableViewDelegate {
         let selectedTrip = viewModel?.trips[indexPath.row]
         goToDetails(selectedTrip)
         
+//      case .offers:
+//        let selectedTrips = viewModel?.trips[indexPath.row]
+//        goToDetails(selectedTrip)
+    
       default:
         break
     }

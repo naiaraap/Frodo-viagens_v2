@@ -101,7 +101,7 @@
                                     <constraint firstAttribute="trailing" secondItem="59E-2i-GTi" secondAttribute="trailing" constant="10" id="lKv-4k-rW6"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ha-OZ-PNa">
+                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ha-OZ-PNa">
                                 <rect key="frame" x="155" y="0.0" width="145" height="365"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8xh-Q2-wRw">
