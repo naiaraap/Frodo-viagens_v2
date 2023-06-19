@@ -84,7 +84,7 @@ extension ViewController: UITableViewDelegate {
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     
-    let viewModel = tripsSection?[indexPath.row]
+    let viewModel = tripsSection?[indexPath.section]
     
     switch viewModel?.tripType {
       case .highlights, .international:
